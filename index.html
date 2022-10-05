@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <!-- CSS from Boostrap no changes made -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+</head>
+<body class="bg-secondary bg-opacity-50">
+    
+    <section class="d-flex flex-column min-vh-100 justify-content-center alight-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 mx-auto rounded shadow bg-white">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="m-5 text-center">
+                                <h1> Mare Login ka muna </h1>
+                            </div>
+
+                            <!-- Email & Password Form Starts Here-->
+                            <form class="m-5 needs-validation" action="login.html">
+                                <div class="mb-5 form-group was-validated">
+                                    <label class="form-label" for="email" >Email address</label>
+                                    <input class="form-control" type="email" id="email" required>
+                                    <div class="invalid-feedback">
+                                        Please enter your email address!
+                                    </div>
+                                </div>
+
+                                <div class="form-group was-validated">
+                                    <label class="form-label" for="username" >Password</label>
+                                    <input class="form-control" type="password" id="Password" required> 
+                                    <div class="invalid-feedback">
+                                        Please enter your password!
+                                    </div>
+                                </div>
+                            <!-- Email & Password Form Ends Here-->
+        
+                            <br>
+                            <div class="m1 form-group form-check">
+                                <input class="form-check-input" type="checkbox" id="check">
+                                <label for="check">Remember me</label>
+                            </div>
+                            <br>
+
+                            <!-- Submit Button -->
+                            <div>
+                                <input class="form-control btn btn-primary" type="submit" value="Submit">
+                            </div>
+
+                            <!-- Reset Button -->
+                            <div class="mb-2">
+                                <input type="reset" class="form-control btn btn-secondary mt-3">
+                            </div>
+
+                            </form>
+                        </div>
+
+                        <!-- column right -->
+                        <div class="col-md-6">
+                            <div>
+                                <img src="login1.svg" alt="login" class="img-fluid p-5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
