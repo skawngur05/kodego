@@ -8,21 +8,24 @@
 
     <!-- CSS from Boostrap no changes made -->
     <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
 </head>
 <body class="bg-secondary bg-opacity-50">
     
     <section class="d-flex flex-column min-vh-100 justify-content-center alight-items-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 mx-auto rounded shadow bg-white">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="m-5 text-center">
-                                <h1> Mare Login ka muna </h1>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-10 mx-auto rounded shadow bg-white">
+    <div class="row">
+    <div class="col-md-6">
+    <div class="m-5 text-center">
+
+                                <h1> Koen Login Page </h1>
                             </div>
 
-                            <!-- Email & Password Form Starts Here-->
+                        <!-- Email & Password Form Starts Here-->
                             <form class="m-5 needs-validation" action="login.html">
                                 <div class="mb-5 form-group was-validated">
                                     <label class="form-label" for="email" >Email address</label>
@@ -39,28 +42,32 @@
                                         Please enter your password!
                                     </div>
                                 </div>
-                            <!-- Email & Password Form Ends Here-->
+                        <!-- Email & Password Form Ends Here-->
         
                             <br>
-                            <div class="m1 form-group form-check">
+                                <div class="m1 form-group form-check">
                                 <input class="form-check-input" type="checkbox" id="check">
                                 <label for="check">Remember me</label>
-                            </div>
+                                </div>
                             <br>
 
-                            <!-- Submit Button -->
-                            <div>
-                                <input class="form-control btn btn-primary" type="submit" value="Submit">
-                            </div>
+                        <!-- Submit Button -->
+                                <div>
+                                    <input class="form-control btn btn-primary" type="submit" value="Submit">
+                                </div>
 
-                            <!-- Reset Button -->
-                            <div class="mb-2">
+                        <!-- Reset Button -->
+                                <div class="mb-2">
                                 <input type="reset" class="form-control btn btn-secondary mt-3">
-                            </div>
+                                </div>
 
                             </form>
-                        </div>
-
+                            <script>
+                                $("#submit").click(function(){
+                                    /* from sweet alert js */swal("Awesome!", "Successfully Login!", "success");
+                                })
+                            </script>
+                         </div>
                         <!-- column right -->
                         <div class="col-md-6">
                             <div>

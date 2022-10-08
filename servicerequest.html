@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request</title>
+    <!-- CSS from Boostrap no changes made -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</head>
+<body>
+    <body class="bg-secondary bg-opacity-100">
+
+        <section class="d-flex flex-column min-vh-100 justify-content-center alight-items-center">
+            <div class="container">
+            <div class="container mt-5">
+            <div class="card">
+              <form>
+              <!-- Card header -->
+                  <div class="card-header">
+                    <h4 class="fw-bold text-center">ABC Company IT Service Request Form</h4>
+                  </div>
+                  
+              <!-- Employee details goes here -->
+                  <div class="card-body">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Full name</label>
+                    <input type="text" class="form-control" id="name"/>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">Phone number</label>
+                    <input type="tel" class="form-control" id="phone" />
+                  </div>
+
+              <!-- Radio Button to identify if working on site or from home-->
+                  <div class="form-check">
+                  <div class="col-md-6">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">On Site</label>
+                  </div>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2"> Work From Home</label>
+                  </div>
+                  
+              <!-- Location form of the user -->
+                  <div class="row">
+                  <div class="col-md-6 mb-4 mb-md-0">
+                  <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" class="form-control" placeholder="Please indicate a landmark or your workstation no. if on site" id="location" />
+                  </div>
+                  </div>
+                  
+              <!-- Service request type dropdown-->
+                  <div class="col-md-6 mb-4 mb-md-0">
+                    <label for="sr-type" class="form-label">Service Request Type</label>
+                    <select id="sr-type" class="form-select mb-3 text-center" aria-label="Default select example">
+                        <option selected value="1"> -- Please Select -- </option>
+                        <option value="2">Desktop/Laptop Setup</option>
+                        <option value="3">Desktop/Laptop Support</option>
+                        <option value="4">Laptop Maintenance</option>
+                        <option value="5">Software Installation</option>
+                        <option value="6">Software Support</option>
+                        <option value="7">Computer Peripheral Setup</option>
+                        <option value="8">Computer Peripheral Troubleshooting</option>
+                        <option value="9">Computer Peripheral Maintenance</option>
+                    </select>
+                    </div>
+                    </div>
+              
+              <!-- Service request description -->
+                    <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="mb-3">
+                        <label for="sr-description" class="form-label">Service Description</label>
+                        <input type="text" class="form-control" id="sr-description"/>
+                    </div>
+                    </div>
+                  
+              <!-- Attachment row -->      
+                    <div class="form-group">
+                    <div class="mb-3">
+                          <label for="attachment"> Please upload a picture/screenshot for reference.</label> <br>
+                          <input type="file" class="form-control-file" id="attachment">
+                                
+                    </div>
+                    </div>
+
+              <!-- Card footer -->
+                    <div class="card-footer">
+                          <button type="reset" class="btn btn-danger">Reset</button>
+                          <button type="button" id="submit" class="btn btn-primary">Submit</button>
+                    </div>
+            
+            </form>
+              <!-- simple submit popup message no changes made from the source -->
+                <script>
+                    $("#submit").click(function(){
+                        /* from sweet alert js */swal("Submitted!", "Thanks for submitting your request", "success");
+                    })
+                </script>
+</body>
+</html>
